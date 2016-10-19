@@ -1,19 +1,21 @@
-Instalasi Git di Windows
+Install Git di Windows
 
-Sebelum melakukan proses installasi Git di Windows, ada beberapa hal yang perlu dipersiapkan antara lain yaitu :
-1. Putty
-2. MSysGit
-3. TortoiseGit
+Terlebih dahulu kita download file installernya disni http://git-scm.com/download/win dan install seperti biasa, namun bedanya di windows dengan Linux dan OSX adalah cara penggunaan CLI atau command linenya.
+kalau di Linux dan OSX kita bisa langsung mengetikan perintah git di Bash atau Terminal sedangkan di windows harus menjalankan Bashnya terlebih dahulu, karena di windows CLInya beda dengan yang di Linux.
 
+	Cara Membuka Bash Git di Windows
+Setelah berhasil menginstall git kita harus membuka git bash terlebih dahulu dengan cara
 
-Putty
-1. Instalasi
-2. Generate keypair
-3. Save private key
-4. Export public key dalam format OpenSSH
-5. Kirim public key ke admin repo
+*klik start lalu cari git bash, setelah ketemu lalu klik git bash nya
 
-MSysGit
-TortoiseGit
+*Setelah terbuka, tempilannya akan sama dengan Bash atau Terminal di Linux dan OSX. Kemudian kita akan mengkonfigurasi gitnya. semua OS cara konfigurasinya sama seperti dibawah ini.
 
+Cara Setup / Konfigurasi Git
+Ketika pertama kali kita menggunakan git akan muncul error dan perintah untuk memasukan username dan email seperti ini :
 
+$ git config --global user.name "dian kurniawan"
+$ git config --global user.email dian@example.com
+
+Kamu harus memasukan username dan email yang telah kamu daftarkan di github atau gitlab, jadi sebelum kita menggunakan git kita harus punya akun terlebih dahulu disana agar kita bisa mengakses repository kita nantinya. Cara mengatasi errornya cukup ganti saja username dan emailnya dengan uname dn email git yang kamu daftarkan. Ingat harus yang sudah terdaftar di github atau gitlab!
+
+jika sudah benar, maka secara otomatis git akan melanjutkan proses atau aktifitas mem-push file kita ke repository yang tadi sudah didaftarkan. 
